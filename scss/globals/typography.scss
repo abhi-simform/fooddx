@@ -1,0 +1,27 @@
+@use "../utilities/" as *;
+
+body {
+  font-family: var(--font-body);
+  color: var(--clr-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+  color: var(--clr-title);
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.section__description {
+  font-size: 16px;
+  line-height: 28px;
+}

@@ -1,0 +1,32 @@
+@use "../utilities/" as *;
+
+.story {
+  background-image: url("../../assets/img/story-bg.jpg");
+  background-size: cover;
+  padding: rem(90) 0 rem(80) 0;
+}
+
+.story-container {
+  max-width: rem(720);
+  text-align: center;
+  .section__title {
+    font-weight: 700;
+    font-size: rem(36);
+    line-height: rem(45);
+    color: var(--clr-primary);
+  }
+  .section__description {
+    max-width: rem(550);
+    margin: rem(20) auto;
+    color: var(--clr-white);
+  }
+  a {
+    color: white;
+    font-size: rem(16);
+    line-height: rem(45);
+    i {
+      margin-right: rem(10);
+      vertical-align: baseline;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@use "../utilities/" as *;
+
+.explore {
+  padding: rem(90) 0 rem(100) 0;
+}
+
+.explore-container {
+  .section__title,
+  .section__description {
+    text-align: center;
+    max-width: rem(750);
+    margin-inline: auto;
+  }
+  .section__title {
+    margin-bottom: rem(14);
+  }
+}
+
+.food {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: rem(70);
+}
+
+.food__card {
+  hr {
+    margin-top: rem(25);
+    margin-bottom: rem(20);
+    border: 1px solid var(--clr-muted);
+  }
+}
+
+.food__title {
+  margin-top: rem(25);
+  font-weight: 700;
+  font-size: rem(18);
+  line-height: rem(28);
+}
+
+.food__details {
+  margin-top: rem(5);
+  color: #555555;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: rem(19);
+}
+
+.food__price {
+  font-family: var(--font-title);
+  margin-top: rem(20);
+  color: var(--clr-primary);
+  font-weight: 500;
+  font-size: rem(24);
+  line-height: rem(28);
+  .food__price--old {
+    color: var(--clr-muted);
+    margin-left: rem(15);
+    text-decoration: line-through;
+  }
+}

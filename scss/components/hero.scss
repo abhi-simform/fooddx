@@ -1,0 +1,47 @@
+@use "../utilities/" as *;
+
+.hero {
+  padding: rem(40) 0;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > * {
+    flex-basis: 50%;
+  }
+}
+
+.hero-content {
+  padding-right: rem(50);
+}
+
+.content__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50px;
+  margin-bottom: rem(25);
+}
+
+.content__description {
+  margin-bottom: rem(25);
+  max-width: rem(430);
+}
+
+.content__actions {
+  .button--secondary {
+    .icon-right::before {
+      color: black;
+      vertical-align: middle;
+    }
+  }
+}
+
+.content__actions .button:first-child {
+  margin-right: rem(25);
+}
+
+.hero-image {
+  text-align: center;
+}

@@ -1,0 +1,14 @@
+@use "../utilities/" as *;
+
+:root {
+  --max-width: 1240px;
+}
+
+section {
+  padding: rem(100) 0;
+}
+
+.container {
+  max-width: min(100% - 2.5rem, var(--max-width));
+  margin: 0 auto;
+}

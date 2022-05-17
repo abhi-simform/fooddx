@@ -1,0 +1,11 @@
+@use "../utilities/" as *;
+
+:root {
+  --clr-primary: hsl(25, 95%, 49%);
+  --clr-dark-bg: hsl(0, 5%, 12%);
+  --clr-title: hsl(0, 0%, 0%);
+  --clr-body: hsl(0, 0%, 33%);
+  --clr-muted: hsl(0, 0%, 77%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+}

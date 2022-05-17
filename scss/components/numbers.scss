@@ -1,0 +1,32 @@
+@use "../utilities/" as *;
+
+.numbers {
+  padding: rem(50) 0;
+  background-color: var(--clr-primary);
+}
+
+.numbers-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  & > * {
+    flex-basis: 25%;
+  }
+}
+
+.card__number {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--clr-white);
+  margin-bottom: rem(5);
+}
+
+.card__category {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+  color: var(--clr-white);
+}

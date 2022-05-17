@@ -1,0 +1,32 @@
+@use "../utilities/" as *;
+
+.footer {
+  padding: rem(80) 0 rem(65) 0;
+  background-color: var(--clr-primary);
+  text-align: center;
+}
+
+.footer__list {
+  color: var(--clr-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(20);
+  margin-bottom: rem(40);
+}
+
+.footer__social {
+  font-size: rem(25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(20);
+  margin-bottom: rem(30);
+}
+
+.footer__copyright {
+  font-weight: 400;
+  font-size: rem(13);
+  line-height: rem(15);
+  color: var(--clr-white);
+}

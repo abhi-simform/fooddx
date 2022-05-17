@@ -1,0 +1,53 @@
+@use "../utilities/" as *;
+
+.byhand {
+  padding: rem(60) 0 rem(110) 0;
+}
+
+.byhand-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: rem(55);
+}
+
+.byhand__image {
+  flex: 0 0 650px;
+  position: relative;
+  // overflow-x: hidden;
+  // overflow-y: visible;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: -40%;
+    right: -18%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image: url("../../assets/img/byhand-bg.png");
+  }
+}
+
+.byhand__content {
+  .section__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: rem(20);
+  }
+  .section__description {
+    margin-bottom: rem(25);
+  }
+}
+
+.byhand__list {
+  margin-bottom: rem(30);
+  .byhand__item {
+    margin-bottom: rem(10);
+    .icon-done::before {
+      color: var(--clr-primary);
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use "../utilities/" as *;
+
+.pride {
+  padding: rem(140) 0 rem(60) 0;
+}
+
+.pride-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: rem(55);
+}
+
+.pride__image {
+  flex: 0 0 650px;
+}
+
+.pride__content {
+  .section__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: rem(20);
+  }
+  .section__description {
+    margin-bottom: rem(25);
+  }
+}
